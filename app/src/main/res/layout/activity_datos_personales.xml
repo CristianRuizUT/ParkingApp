@@ -9,16 +9,76 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <EditText
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Datos de Uusuario"/>
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Datos de usuario"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="110dp"
+            android:textSize="20dp"
+            android:text="Primer Nombre *"/>
+        <EditText
+            android:id="@+id/txtPrimerNombre"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="25dp"
+            android:layout_marginTop="140dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="170dp"
+            android:textSize="20dp"
+            android:text="Segundo Nombre"/>
+        <EditText
+            android:id="@+id/txtSegundoNombre"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="25dp"
+            android:layout_marginTop="200dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="230dp"
+            android:textSize="20dp"
+            android:text="Primer Apellido *"/>
+        <EditText
+            android:id="@+id/txtPrimerApellido"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="25dp"
+            android:layout_marginTop="260dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="290dp"
+            android:textSize="20dp"
+            android:text="Segundo Apellido"/>
+        <EditText
+            android:id="@+id/txtSegundoApellido"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="25dp"
+            android:layout_marginTop="320dp" />
+
+
+
         <Button
             android:id="@+id/BtnGuardar"
-            android:layout_marginTop="80dp"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
             android:text="Guardar"
+            android:layout_marginBottom="20dp"
             android:onClick="GuardarPersona"/>
     </FrameLayout>
 
