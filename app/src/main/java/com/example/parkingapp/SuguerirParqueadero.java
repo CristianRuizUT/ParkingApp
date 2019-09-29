@@ -15,7 +15,7 @@ public class SuguerirParqueadero extends AppCompatActivity {
     }
 
     public void  GuardarSugPar(View view){
-        Intent miIntent = new Intent(getBaseContext(),MainActivity.class);
+        Intent miIntent = new Intent(getBaseContext(),MapsActivity.class);
         startActivity(miIntent);
     }
 }
