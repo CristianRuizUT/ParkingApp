@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">ParkingApp</string>
     <string name="title_activity_maps">Map</string>
+    <string name="marker_detail_latlng">(%1$.2f, %2$.2f)</string>
+    <string name="InformacionMostrat">Aqui puede encontrar todo el contenido o informacion de este parqueadero</string>
 </resources>
