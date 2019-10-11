@@ -3,4 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorBotonTransparente">#5B5E7E</color>
+    <color name="colorGrisMapa">#F5F5F5</color>
+    <color name="colorBlancoMapa">#FFFFFF</color>
 </resources>

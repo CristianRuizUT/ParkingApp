@@ -125,7 +125,13 @@ public class DatosPersonales extends AppCompatActivity {
         PrimerApellido.setText("");
         SegundoApellido.setText("");
 
-        Intent miIntent = new Intent(getBaseContext(),SuguerirParqueadero.class);
+        Intent miIntent = new Intent(getBaseContext(),MapsActivity.class);
+        startActivity(miIntent);
+    }
+
+
+    public void  VerMapa(View view) {
+        Intent miIntent = new Intent(getBaseContext(),MapsActivity.class);
         startActivity(miIntent);
     }
 }

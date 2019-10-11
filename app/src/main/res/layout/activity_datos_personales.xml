@@ -103,6 +103,15 @@
                 android:text="Guardar"
                 android:onClick="GuardarPersona"/>
 
+            <Button
+                android:id="@+id/BtnVerMapa"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:text="Ver mapa!!!"
+                android:onClick="VerMapa"/>
+
         </LinearLayout>
 
     </ScrollView>

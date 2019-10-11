@@ -3,9 +3,12 @@ package com.example.parkingapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.parkingapp.model.Persona;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -71,7 +74,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleMap.OnInfoW
         InfoWindow = googleMap.addMarker(new MarkerOptions()
                 .position(CineColombiaInfo)
                 .title("Paqueadero CineColombia")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
 
         //Camara donde va iniciar el mapa
@@ -133,5 +136,16 @@ public class MapsActivity extends AppCompatActivity implements GoogleMap.OnInfoW
                     getString(R.string.InformacionMostrat))
                     .show(getSupportFragmentManager(),null);
         }
+    }
+
+
+    public void  GoToPerson(View view) {
+        Intent miIntent = new Intent(getBaseContext(),DatosPersonales.class);
+        startActivity(miIntent);
+    }
+
+    public void  GoToParking(View view) {
+        Intent miIntent = new Intent(getBaseContext(),SuguerirParqueadero.class);
+        startActivity(miIntent);
     }
 }
