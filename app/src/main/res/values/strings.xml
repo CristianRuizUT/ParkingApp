@@ -2,5 +2,8 @@
     <string name="app_name">ParkingApp</string>
     <string name="title_activity_maps">Map</string>
     <string name="marker_detail_latlng">(%1$.2f, %2$.2f)</string>
-    <string name="InformacionMostrat">Aqui puede encontrar todo el contenido o informacion de este parqueadero</string>
+    <string name="InformacionMostrat">Parqueadero cinecolombia, dispoblime de 7 de la mañana hasta la ultima funcion</string>
+    <string name="InformacionMostratUtadeo">La Universidad Jorge Tadeo Lozano es una universidad colombiana de carácter privado acreditada de alta calidad por el Ministerio de Educación Nacional</string>
+    <string name="InformacionMostratLaTedo">Parqueadero la tadeo, exclusivo para nuestros estudiantes, profesores, egresados y funcionarios de la universidad</string>
+    <string name="InformacionMostratBiblioteca">Es una Biblioteca de puertas abiertas, con cerca de 150.000 libros y recursos educativos al servicio de nuestros usuarios, contribuye con los procesos de formación académica, de la docencia, investigación y proyección social.</string>
 </resources>
