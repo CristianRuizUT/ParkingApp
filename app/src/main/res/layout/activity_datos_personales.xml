@@ -1,143 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     android:layout_height="match_parent"
     tools:context=".DatosPersonales">
-    
-    <FrameLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="top"
-            android:layout_marginTop="10dp"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            android:text="Datos de usuario"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="Datos de usuario"/>
 
-
-
-        <!-- <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="110dp"
-            android:textSize="20dp"
-            android:text="Primer Nombre *"/>
-        <EditText
-            android:id="@+id/txtPrimerNombre"
-            android:layout_width="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_height="25dp"
-            android:layout_marginTop="140dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="170dp"
-            android:textSize="20dp"
-            android:text="Segundo Nombre"/>
-        <EditText
-            android:id="@+id/txtSegundoNombre"
-            android:layout_width="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_height="25dp"
-            android:layout_marginTop="200dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="230dp"
-            android:textSize="20dp"
-            android:text="Primer Apellido *"/>
-        <EditText
-            android:id="@+id/txtPrimerApellido"
-            android:layout_width="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_height="25dp"
-            android:layout_marginTop="260dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="290dp"
-            android:textSize="20dp"
-            android:text="Segundo Apellido"/>
-        <EditText
-            android:id="@+id/txtSegundoApellido"
-            android:layout_width="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_height="25dp"
-            android:layout_marginTop="320dp" /> -->
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
-            android:hint="Primer Nombre *">
-
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Primer Nombre *">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="170dp"
-            android:hint="Segundo Nombre">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPrimerNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Segundo Nombre">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
-            android:hint="Primer Apellido *">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtSegundoNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Primer Apellido *">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="290dp"
-            android:hint="Segundo Apellido">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPrimerApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Segundo Apellido">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtSegundoApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Lista de personas"/>
+
+            <ListView
+                android:id="@+id/lv_datosPersonas"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
 
 
+            <Button
+                android:id="@+id/BtnGuardar"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Guardar"
+                android:onClick="GuardarPersona"/>
 
+        </LinearLayout>
 
+    </ScrollView>
 
-
-        <Button
-            android:id="@+id/BtnGuardar"
-            android:layout_gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20dp"
-            android:text="Guardar"
-            android:layout_marginBottom="20dp"
-            android:onClick="GuardarPersona"/>
-    </FrameLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
